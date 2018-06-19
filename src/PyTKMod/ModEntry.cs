@@ -12,12 +12,14 @@ namespace PyTKMod
 {
     public class ModEntry : Mod
     {
-        internal static Config config;
-        internal static List<CustomObjectData> customObjects;
+        internal Config config;
+        internal List<CustomObjectData> customObjects;
+        internal ITranslationHelper i18n => Helper.Translation;
 
         public override void Entry(IModHelper helper)
         {
-            Monitor.Log($"Started {helper.ModRegistry.ModID} from folder: {helper.DirectoryPath}");
+            string startingMessage = i18n.Get("template.start", new { mod = helper.ModRegistry.ModID, folder = helper.DirectoryPath });
+            Monitor.Log(startingMessage);
 
             config = helper.ReadConfig<Config>();
 
@@ -32,8 +34,8 @@ namespace PyTKMod
 
             customObjects = new List<CustomObjectData>();
             customObjects.AddRange(new[] {
-                CustomObjectData.newObject("PyTKMod.RedPill", pillTexture, Color.Red, "Red Pill", "Take the red pill", edibility:50),
-                CustomObjectData.newObject("PyTKMod.BluePill", pillTexture, Color.Blue, "Blue Pill", "Take the blue pill", edibility: 50)
+                CustomObjectData.newObject("PyTKMod.RedPill", pillTexture, Color.Red, i18n.Get("template.redpill.name"), i18n.Get("template.redpill.description"), edibility:50),
+                CustomObjectData.newObject("PyTKMod.BluePill", pillTexture, Color.Blue, i18n.Get("template.bluepill.name"), i18n.Get("template.bluepill.description"), edibility: 50)
             });
 
             config.debugKey.onPressed(() =>

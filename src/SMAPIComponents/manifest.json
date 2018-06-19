@@ -1,0 +1,10 @@
+﻿{
+  "Name": "SMAPIComponents",
+  "Author": "ModAuthor",
+  "Version": "1.0.0",
+  "Description": "Mod Template",
+  "UniqueID": "ModAuthor.SMAPIComponents",
+  "EntryDll": "SMAPIComponents.dll",
+  "MinimumApiVersion": "2.6-beta",
+  "UpdateKeys": [ "Nexus:" ]
+}

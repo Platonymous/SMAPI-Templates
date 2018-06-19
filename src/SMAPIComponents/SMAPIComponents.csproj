@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}</ProjectGuid>
+    <ProjectGuid>{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SMAPIMod</RootNamespace>
-    <AssemblyName>SMAPIMod</AssemblyName>
+    <RootNamespace>SMAPIComponents</RootNamespace>
+    <AssemblyName>SMAPIComponents</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -44,12 +44,11 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="ModEntry.cs" />
+    <Compile Include="NewAssetEditor.cs" />
+    <Compile Include="NewAssetLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="i18n\default.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="manifest.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -57,6 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Pathoschild.Stardew.ModBuildConfig.2.1.0-beta-20180428\analyzers\dotnet\cs\StardewModdingAPI.ModBuildConfig.Analyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\nuget-icon.png" />
+    <Content Include="Assets\pytk_icon.png" />
+    <Content Include="Assets\pytk_preview.png" />
+    <Content Include="Assets\smapi_icon.png" />
+    <Content Include="Assets\smapi_preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Pathoschild.Stardew.ModBuildConfig.2.1.0-beta-20180428\build\Pathoschild.Stardew.ModBuildConfig.targets" Condition="Exists('..\packages\Pathoschild.Stardew.ModBuildConfig.2.1.0-beta-20180428\build\Pathoschild.Stardew.ModBuildConfig.targets')" />

@@ -2,17 +2,15 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 
-namespace SMAPIMod
+namespace SMAPIComponents
 {
     public class ModEntry : Mod
     {
-        internal Config config;
-        internal ITranslationHelper i18n => Helper.Translation;
+        internal static Config config;
 
         public override void Entry(IModHelper helper)
         {
-            string startingMessage = i18n.Get("template.start", new { mod = helper.ModRegistry.ModID, folder = helper.DirectoryPath });
-            Monitor.Log(startingMessage);
+            Monitor.Log($"Started {helper.ModRegistry.ModID} from folder: {helper.DirectoryPath}");
 
             config = helper.ReadConfig<Config>();
 
@@ -24,7 +22,7 @@ namespace SMAPIMod
             e.Button.TryGetKeyboard(out Keys keyPressed);
 
             if (keyPressed.Equals(config.debugKey))
-                Monitor.Log(i18n.Get("template.key"), LogLevel.Info);
+                Monitor.Log($"Debug Key pressed", LogLevel.Info);
         }
     }
 }

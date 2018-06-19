@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="SMAPI_Templates_VSIX.798bdd98-3807-46f6-92e3-69d4b6cc1ffd" Version="1.0.2" Language="en-US" Publisher="Platonymous" />
+        <Identity Id="SMAPI_Templates_VSIX.798bdd98-3807-46f6-92e3-69d4b6cc1ffd" Version="1.1.1" Language="en-US" Publisher="Platonymous" />
         <DisplayName>Stardew Valley Modding Templates</DisplayName>
         <Description xml:space="preserve">Templates for the Stardew Valley Modding API by Pathoschild</Description>
         <MoreInfo>https://github.com/Platonymous</MoreInfo>
@@ -21,6 +21,8 @@
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" TargetVersion="" d:TargetPath="ProjectTemplates\SMAPIMod.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\PyTKMod.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\NewAssetEditor.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\NewAssetLoader.zip" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
