@@ -12,14 +12,14 @@ namespace SMAPIMod
         public override void Entry(IModHelper helper)
         {
             string startingMessage = i18n.Get("template.start", new { mod = helper.ModRegistry.ModID, folder = helper.DirectoryPath });
-            Monitor.Log(startingMessage);
+            Monitor.Log(startingMessage, LogLevel.Trace);
 
             config = helper.ReadConfig<Config>();
 
-            InputEvents.ButtonPressed += InputEvents_ButtonPressed;
+            helper.Events.Input.ButtonPressed += Input_ButtonPressed;
         }
 
-        private void InputEvents_ButtonPressed(object sender, EventArgsInput e)
+        private void Input_ButtonPressed(object sender, ButtonPressedEventArgs e)
         {
             e.Button.TryGetKeyboard(out Keys keyPressed);
 

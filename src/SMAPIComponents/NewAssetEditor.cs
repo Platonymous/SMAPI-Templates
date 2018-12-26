@@ -2,9 +2,6 @@
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewValley;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace SMAPIComponents
 {
@@ -12,7 +9,7 @@ namespace SMAPIComponents
     {
         // Add to Entry: helper.Content.AssetEditors.Add(new NewAssetEditor(helper));
 
-        public IModHelper helper;
+        private IModHelper helper;
 
         public NewAssetEditor(IModHelper helper)
         {
@@ -37,7 +34,10 @@ namespace SMAPIComponents
             else if (asset.AssetNameEquals(@"Data/To/Edit"))
             {
                 string newValue = "New/Values/...";
-                asset.AsDictionary<int, string>().Set(index, newValue);
+                if(asset.AsDictionary<int, string>().Data.ContainsKey(index))
+                    asset.AsDictionary<int, string>().Data[index] = newValue;
+                else
+                    asset.AsDictionary<int, string>().Data.Add(index, newValue);
             }
         }
 

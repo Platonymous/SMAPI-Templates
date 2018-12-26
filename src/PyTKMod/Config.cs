@@ -1,14 +1,14 @@
-﻿using Microsoft.Xna.Framework.Input;
+﻿using StardewModdingAPI;
 
 namespace PyTKMod
 {
     class Config
     {
-        public Keys debugKey { get; set; }
+        public SButton debugKey { get; set; }
 
         public Config()
         {
-            debugKey = Keys.J;
+            debugKey = SButton.J;
         }
     }
 }

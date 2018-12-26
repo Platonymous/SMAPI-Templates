@@ -1,9 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using xTile;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace SMAPIComponents
 {
@@ -11,7 +8,7 @@ namespace SMAPIComponents
     {
         // Add to Entry: helper.Content.AssetLoaders.Add(new NewAssetLoader(helper));
 
-        public IModHelper helper;
+        private IModHelper helper;
 
         public NewAssetLoader(IModHelper helper)
         {

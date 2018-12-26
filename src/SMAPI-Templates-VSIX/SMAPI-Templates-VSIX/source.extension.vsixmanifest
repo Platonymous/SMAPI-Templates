@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="SMAPI_Templates_VSIX.798bdd98-3807-46f6-92e3-69d4b6cc1ffd" Version="1.1.2" Language="en-US" Publisher="Platonymous" />
+        <Identity Id="SMAPI_Templates_VSIX.798bdd98-3807-46f6-92e3-69d4b6cc1ffd" Version="1.2.2" Language="en-US" Publisher="Platonymous" />
         <DisplayName>Stardew Valley Modding Templates</DisplayName>
-        <Description xml:space="preserve">Templates for the Stardew Valley Modding API by Pathoschild</Description>
+        <Description xml:space="preserve">Templates for Pathoschilds Stardew Valley Modding API</Description>
         <MoreInfo>https://github.com/Platonymous</MoreInfo>
+        <License>LICENSE</License>
         <GettingStartedGuide>https://stardewvalleywiki.com/Modding:Modder_Guide</GettingStartedGuide>
         <Icon>pufferchick2.png</Icon>
         <PreviewImage>pufferchick.png</PreviewImage>
@@ -16,13 +17,14 @@
         <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
     </Dependencies>
     <Assets>
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" TargetVersion="" d:TargetPath="ProjectTemplates\SMAPIMod.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\SMAPIMod.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\PyTKMod.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\NewAssetEditor.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\NewAssetLoader.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\PyTKItemMod.zip" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}</ProjectGuid>
+    <ProjectGuid>{1275274A-2424-4CCE-A70A-1D02D4672FD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PyTKMod</RootNamespace>
-    <AssemblyName>PyTKMod</AssemblyName>
+    <RootNamespace>CustomItemTemplate</RootNamespace>
+    <AssemblyName>CustomItemTemplate</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -46,11 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
-    <Compile Include="ModEntry.cs" />
+    <Compile Include="CustomItem.cs" />
+    <Compile Include="PyTKItemModItem.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Items.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="i18n\de.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="i18n\default.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -58,6 +66,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Pathoschild.Stardew.ModBuildConfig.2.2.0\analyzers\dotnet\cs\StardewModdingAPI.ModBuildConfig.Analyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\lego_scarecrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Pathoschild.Stardew.ModBuildConfig.2.2.0\analyzers\dotnet\cs\StardewModdingAPI.ModBuildConfig.Analyzer.dll" />

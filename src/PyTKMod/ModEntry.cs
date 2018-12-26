@@ -19,7 +19,7 @@ namespace PyTKMod
         public override void Entry(IModHelper helper)
         {
             string startingMessage = i18n.Get("template.start", new { mod = helper.ModRegistry.ModID, folder = helper.DirectoryPath });
-            Monitor.Log(startingMessage);
+            Monitor.Log(startingMessage,LogLevel.Trace);
 
             config = helper.ReadConfig<Config>();
 

@@ -1,0 +1,15 @@
+﻿{
+  "Name": "PyTKItemMod",
+  "Author": "ModAuthor",
+  "Version": "1.0.0",
+  "Description": "PyTKItemMod",
+  "UniqueID": "ModAuthor.PyTKItemMod",
+  "EntryDll": "PyTKItemMod.dll",
+  "MinimumApiVersion": "1.0.0",
+  "UpdateKeys": [ "Nexus:" ],
+  "Dependencies": [
+    {
+      "UniqueID": "Platonymous.Toolkit"
+    }
+  ]
+}

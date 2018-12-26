@@ -14,10 +14,10 @@ namespace SMAPIComponents
 
             config = helper.ReadConfig<Config>();
 
-            InputEvents.ButtonPressed += InputEvents_ButtonPressed;
+            helper.Events.Input.ButtonPressed += Input_ButtonPressed;
         }
 
-        private void InputEvents_ButtonPressed(object sender, EventArgsInput e)
+        private void Input_ButtonPressed(object sender, ButtonPressedEventArgs e)
         {
             e.Button.TryGetKeyboard(out Keys keyPressed);
 
