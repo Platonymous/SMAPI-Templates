@@ -5,6 +5,6 @@
   "Description": "Mod Template",
   "UniqueID": "ModAuthor.SMAPIComponents",
   "EntryDll": "SMAPIComponents.dll",
-  "MinimumApiVersion": "2.6-beta",
+  "MinimumApiVersion": "2.11",
   "UpdateKeys": [ "Nexus:" ]
 }
