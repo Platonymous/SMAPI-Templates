@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyTKMod", "PyTKMod\PyTKMod.csproj", "{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPIMod", "SMAPIMod\SMAPIMod.csproj", "{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMAPIMod", "SMAPIMod\SMAPIMod.csproj", "{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMAPIComponents", "SMAPIComponents\SMAPIComponents.csproj", "{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}"
 EndProject
@@ -13,22 +13,52 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyTKItemMod", "PyTKItemMod\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "[CP] SMAPIContentPack", "SMAPIContentPack\[CP] SMAPIContentPack.csproj", "{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyTKTileAction", "PyTKTileAction\PyTKTileAction.csproj", "{FF2326E6-32C2-4136-9073-DB32858B9B85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|x86.ActiveCfg = Debug|x86
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|x86.Build.0 = Debug|x86
 		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|Any CPU.ActiveCfg = Release|x86
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|x86.ActiveCfg = Release|x86
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|x86.Build.0 = Release|x86
 		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|x86.ActiveCfg = Debug|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|x86.Build.0 = Debug|x86
 		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|Any CPU.ActiveCfg = Release|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|x86.ActiveCfg = Release|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|x86.Build.0 = Release|x86
 		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|x86.ActiveCfg = Debug|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|x86.Build.0 = Debug|x86
 		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|Any CPU.ActiveCfg = Release|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|x86.ActiveCfg = Release|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|x86.Build.0 = Release|x86
 		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|x86.ActiveCfg = Debug|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|x86.Build.0 = Debug|x86
 		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|Any CPU.ActiveCfg = Release|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|x86.ActiveCfg = Release|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|x86.Build.0 = Release|x86
 		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|x86.ActiveCfg = Debug|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|x86.Build.0 = Debug|x86
 		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|Any CPU.ActiveCfg = Release|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|x86.ActiveCfg = Release|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|x86.Build.0 = Release|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Debug|x86.ActiveCfg = Debug|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Debug|x86.Build.0 = Debug|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Release|Any CPU.ActiveCfg = Release|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Release|x86.ActiveCfg = Release|x86
+		{FF2326E6-32C2-4136-9073-DB32858B9B85}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
