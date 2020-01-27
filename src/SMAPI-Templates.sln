@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyTKMod", "PyTKMod\PyTKMod.csproj", "{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyTKMod", "PyTKMod\PyTKMod.csproj", "{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPIMod", "SMAPIMod\SMAPIMod.csproj", "{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPIComponents", "SMAPIComponents\SMAPIComponents.csproj", "{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMAPIComponents", "SMAPIComponents\SMAPIComponents.csproj", "{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyTKItemMod", "PyTKItemMod\PyTKItemMod.csproj", "{1275274A-2424-4CCE-A70A-1D02D4672FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyTKItemMod", "PyTKItemMod\PyTKItemMod.csproj", "{1275274A-2424-4CCE-A70A-1D02D4672FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[CP] SMAPIContentPack", "SMAPIContentPack\[CP] SMAPIContentPack.csproj", "{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "[CP] SMAPIContentPack", "SMAPIContentPack\[CP] SMAPIContentPack.csproj", "{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,26 +19,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7D800541-5A3C-4F6D-B12E-B2CFCCDADB14}.Release|Any CPU.ActiveCfg = Release|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0E8F0820-D0F4-4AFE-AF0D-DEE128E9AC67}.Release|Any CPU.ActiveCfg = Release|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1CE6F3B1-EF6F-4AE4-BCC1-B8B27F64B5FC}.Release|Any CPU.ActiveCfg = Release|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1275274A-2424-4CCE-A70A-1D02D4672FD7}.Release|Any CPU.ActiveCfg = Release|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{731B8EA9-A4E8-45C3-86C4-ABD88D57C349}.Release|Any CPU.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
