@@ -6,7 +6,7 @@ namespace SMAPIComponents
 {
     class NewAssetLoader : IAssetLoader
     {
-        // Add to Entry: helper.Content.AssetLoaders.Add(new NewAssetLoader(helper));
+        // Add to Entry: helper.Content.AssetLoaders.Add(new SMAPIComponents.NewAssetLoader(helper));
 
         private IModHelper helper;
 

@@ -7,7 +7,7 @@ namespace SMAPIComponents
 {
     class NewAssetEditor : IAssetEditor
     {
-        // Add to Entry: helper.Content.AssetEditors.Add(new NewAssetEditor(helper));
+        // Add to Entry: helper.Content.AssetEditors.Add(new SMAPIComponents.NewAssetEditor(helper));
 
         private IModHelper helper;
 
